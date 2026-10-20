@@ -1,1 +1,60 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小星｜个人工作室</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#11110f;color:#eeeae0;font-family:Arial,"Microsoft YaHei",sans-serif}
+nav,section,footer{padding-left:8%;padding-right:8%}
+nav{height:80px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #393931}
+.logo{font-size:24px;font-weight:bold}a{color:inherit;text-decoration:none}
+nav a{margin-left:22px;font-size:13px;color:#c5c2b9}
+.hero{min-height:620px;display:flex;align-items:center;justify-content:space-between;gap:40px;padding-top:70px;padding-bottom:70px}
+h1{font-size:clamp(64px,10vw,112px);letter-spacing:-7px;line-height:.95;margin:25px 0}
+.green{color:#d5fb65}.label{font-size:11px;letter-spacing:4px;color:#d5fb65}
+p{color:#aaa99f;line-height:2;font-size:14px;max-width:440px}
+.btn{display:inline-block;margin-top:22px;padding:14px 22px;background:#d5fb65;color:#151610;font-size:13px;font-weight:bold}
+.art{width:300px;height:360px;flex-shrink:0;background:linear-gradient(145deg,#d6d3c6,#78845a);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.art:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:#b9d57a;top:-90px;right:-80px}
+.orb{position:relative;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#f8f5d8,#8fa45e 65%,#3b492d);display:grid;place-items:center;color:#202619;font-size:54px;font-weight:bold}
+section{padding-top:85px;padding-bottom:85px;border-top:1px solid #393931}
+h2{font-size:clamp(35px,5vw,56px);letter-spacing:-2px;margin:18px 0 35px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{padding:28px;border:1px solid #393931;min-height:230px;background:#171714}
+.icon{font-size:42px;color:#d5fb65;margin:15px 0}
+h3{font-size:21px}.card p{font-size:13px}
+.quote{background:#dedbcf;color:#171713;padding:55px 8%;font-size:clamp(28px,4vw,48px);letter-spacing:-1px;line-height:1.4}
+.quote p{color:#55564b}
+.contact{background:#1a1a16;padding-top:65px;padding-bottom:65px}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.links a{border:1px solid #55554b;padding:12px 15px;font-size:12px}
+.links a:hover{color:#d5fb65;border-color:#d5fb65}
+footer{padding-top:25px;padding-bottom:25px;color:#77776e;font-size:11px;display:flex;justify-content:space-between}
+@media(max-width:700px){nav,section,footer{padding-left:6%;padding-right:6%}.hero{flex-direction:column;align-items:flex-start;min-height:auto}.art{width:100%;height:280px}.cards{grid-template-columns:1fr}.quote{padding:40px 6%}nav a{margin-left:10px;font-size:11px}footer{gap:15px;flex-wrap:wrap}h1{letter-spacing:-4px}}
+</style>
+</head>
+<body>
+<nav><a class="logo" href="#">小星<span class="green">®</span></a><div><a href="#about">关于</a><a href="#work">作品</a><a href="#contact">联系</a></div></nav>
+<div class="hero" id="about">
+<div><div class="label">INDEPENDENT PERSONAL STUDIO</div><h1>Make it<br><span class="green">matter.</span></h1><p>你好，我是小星。这里记录我的想法、正在探索的项目，以及关于审美、生活与创造的一切。少一点噪音，多一点真正有价值的东西。</p><a class="btn" href="#work">探索我的世界 ↘</a></div>
+<div class="art"><div class="orb">X.</div></div>
+</div>
+<section id="work"><div class="label">01 / WHAT I EXPLORE</div><h2>想法，正在成为现实。</h2><div class="cards">
+<div class="card"><div class="label">01 — DIGITAL</div><div class="icon">◌</div><h3>数字作品</h3><p>把灵感变成简洁、实用、有质感的数字体验。</p></div>
+<div class="card"><div class="label">02 — PROJECTS</div><div class="icon">⌘</div><h3>独立项目</h3><p>从真实的问题出发，探索值得长期投入的方向。</p></div>
+<div class="card"><div class="label">03 — LIFESTYLE</div><div class="icon">✳</div><h3>生活灵感</h3><p>记录审美、效率、成长，以及自己的思考。</p></div>
+</div><p>以上为个人方向与概念展示，具体产品和服务将在正式推出后更新。</p></section>
+<div class="quote">“不必追逐所有人的目光。<br>把自己的路，走得更清楚一点。”<p>KEEP IT SIMPLE. KEEP MOVING.</p></div>
+<section><div class="label">02 / MY PRINCIPLES</div><h2>简单，但不随便。<br>克制，但有态度。</h2><p>我相信好的东西不必大声宣告。清晰的方向、可靠的细节，以及持续行动，比漂亮的口号更重要。</p></section>
+<section class="contact" id="contact"><div class="label">03 / SAY HELLO</div><h2>保持联系。<br>保持可能。</h2><p>合作、交流，或者只是打个招呼，欢迎找到我。</p><div class="links">
+<a href="https://t.me/jonl01" target="_blank">Telegram ↗</a>
+<a href="https://www.facebook.com/jxx177a" target="_blank">Facebook ↗</a>
+<a href="https://www.instagram.com/jxx177a/" target="_blank">Instagram ↗</a>
+<a href="mailto:jix92320@gmail.com">Email ↗</a>
+<a href="#" onclick="alert('我的微信号：fll888100');return false">微信：fll888100</a>
+</div></section>
+<footer><span>小星® · PERSONAL STUDIO</span><span>© 2026 · MAKE IT MATTER.</span></footer>
+</body>
+</html>
